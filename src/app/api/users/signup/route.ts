@@ -3,9 +3,9 @@ import User from "@/models/userModels"
 import { NextRequest, NextResponse } from "next/server"
 import bcryptjs from "bcryptjs"
 connect()
-export async function POST(resquest:NextRequest) {
+export async function POST(request:NextRequest) {
     try {
-        const reqBody=resquest.json
+        const reqBody=request.json
         const {email,username,password}=reqBody
         //validation 
         console.log(reqBody)
